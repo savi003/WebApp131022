@@ -1,0 +1,22 @@
+<div>
+    {{title|uppercase}}
+
+    <!-- parameterised pipe -->
+    {{today|date:'fullDate'}}
+    <br>
+
+    <!-- chaining -->
+    {{today|date:'MMMM'|uppercase}}
+    <br>
+
+    {{user.id}}
+    {{user.name}}
+
+    <!-- parameterised pipe -->
+    {{user.salary|currency:'INR'}}
+
+    <br>
+    <!-- custom pipe -->
+    {{user.name|custompipe:user.name}}
+    
+</div>
